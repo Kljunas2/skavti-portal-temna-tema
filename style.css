@@ -1,0 +1,101 @@
+@-moz-document domain("portal.skavt.net") {
+	:root {
+		/* Neutral scale — inverted from dark gray to light gray / near white */
+		--slds-g-color-neutral-base-100: #141414 !important;
+		--slds-g-color-neutral-base-95: #1e1e1e !important;
+		--slds-g-color-neutral-base-90: #242424 !important;
+		--slds-g-color-neutral-base-80: #2a2a2a !important;
+		--slds-g-color-neutral-base-70: #3c3c3c !important;
+		--slds-g-color-neutral-base-65: #525252 !important;
+		--slds-g-color-neutral-base-60: #666 !important;
+		--slds-g-color-neutral-base-50: #7a7a7a !important;
+		--slds-g-color-neutral-base-40: #8a8a8a !important;
+		--slds-g-color-neutral-base-30: #999 !important;
+		--slds-g-color-neutral-base-20: #b5b5b5 !important;
+		--slds-g-color-neutral-base-15: #d1d1d1 !important;
+		--slds-g-color-neutral-base-10: #e8e8e8 !important;
+		--slds-g-color-neutral-base-0: #f5f5f5 !important;
+
+		/* Surfaces — inverted dark ↔ light */
+		--slds-g-color-surface-1: #333 !important;
+		--slds-g-color-surface-2: #2e2e2e !important;
+		--slds-g-color-surface-3: #262626 !important;
+		--slds-g-color-surface-container-1: #2a2a2a !important;
+		--slds-g-color-surface-container-2: #222 !important;
+		--slds-g-color-surface-container-3: #1f1f1f !important;
+
+		/* Text contrast — inverted to darker shades */
+		--slds-g-color-on-surface-1: #1e1e1e !important;
+		--slds-g-color-on-surface-2: #2a2a2a !important;
+		--slds-g-color-on-surface-3: #3c3c3c !important;
+
+		/* Backdrops and overlays — lighter overlay for inverted theme */
+		--slds-s-backdrop-color-background: rgba(225, 225, 225, 0.6) !important;
+		--lwc-LoginBackgroundColor: var(--slds-g-color-neutral-base-90) !important;
+		--lwc-CardBackgroundColor: var(--slds-g-color-neutral-base-70) !important;
+		--lwc-colorTextButtonBrand: var(--slds-g-color-neutral-base-10) !important;
+		--lwc-colorTextDefault: var(--slds-g-color-neutral-base-10) !important;
+		--lwc-colorTextPlaceholder: var(--slds-g-color-neutral-base-10) !important;
+	}
+
+	/* Ozadje */
+	html {
+		background-color: #1a2b34;
+
+	}
+
+	/* nekateri dogodki imajo css po meri (verjetno rich text), zato nastavi tukaj neko nevtralno barvo,
+	da se da brati tako privzeto belo besedilo kot tudi mozno crno. */
+	.dogodek-container .card-container lightning-card article .slds-card__body * {
+		background-color: var(--slds-g-color-neutral-base-65) !important;
+	}
+
+	/* urejanje clanstva */
+	.bivsi-clan {
+		background-color: var(--slds-g-color-neutral-base-80) !important;
+	}
+
+	/* podmeniji glavnega menija in pri uporbniku */
+	.forceCommunityThemeNav.emberInnerHeader .mainNavItem .subMenu,
+	.forceCommunityThemeNav.emberInnerHeader .mainNavItem .subMenu .uiMenuItem,
+	.forceCommunityThemeProfileMenu.emberInnerHeader .profile-menuList {
+		background-color: var(--slds-g-color-neutral-base-90) !important
+	}
+
+	/* moj steg */
+	.uiTabset--default .tabs__item > a {
+		color: var(--slds-g-color-neutral-base-40);
+		:hover {
+			color: var(--slds-g-color-neutral-base-20);
+		}
+	}
+	.uiTabset--default .tabs__item.active > a {
+		color: var(--slds-g-color-neutral-base-10);
+	}
+
+	/* uporabniski profil */
+	.forceCommunityUserProfileBody * {
+		background-color: var(--slds-g-color-neutral-base-100) !important;
+	}
+	.forceCommunityUserProfileDetail .userBadge {
+		color: var(--slds-g-color-neutral-base-30);
+	}
+
+	/* nastavitve */
+	.cb-section_background {
+		background-color: var(--slds-g-color-neutral-base-100) !important;
+	}
+	.forceCommunityUserSettingsInternal .mandate-wrapper,
+	.settingsLabel {
+		color: var(--slds-g-color-neutral-base-30) !important;
+	}
+
+	/* prijava */
+	.salesforceIdentityLoginForm2 .inputContainer {
+		background-color: var(--lwc-CardBackgroundColor);
+	}
+
+	.salesforceIdentityLoginForm2 .inverseTextColor {
+		color: #508dff !important;
+	}
+}
